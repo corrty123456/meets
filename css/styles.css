@@ -11,30 +11,11 @@ body, html {
 }
 
 #app {
-  text-align: center;
-}
-
-input {
-  padding: 10px;
-  font-size: 18px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 8px;
-  width: 200px;
-}
-
-button {
-  background-color: #1a73e8;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #1764c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100vw;
+  height: 100vh;
 }
 
 video {
@@ -70,4 +51,14 @@ button:hover {
 button:active {
   transform: scale(0.95);
 }
- 
+
+@media only screen and (max-width: 768px) {
+  video {
+    width: 100%;
+  }
+
+  #controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
