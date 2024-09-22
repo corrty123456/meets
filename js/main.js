@@ -16,4 +16,3 @@ document.getElementById('createMeeting').addEventListener('click', () => {
   const newMeetingCode = generateMeetingCode();
   window.location.href = `meeting.html?code=${newMeetingCode}`;
 });
- 
